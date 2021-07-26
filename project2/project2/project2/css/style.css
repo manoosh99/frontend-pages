@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clr{
+    clear: both;
+}
+body{
+
+    height: 2000px;
+    }
+.contanier{
+    width: 90%;
+    margin: auto;
+}
+.header{
+    background-color: black;
+    padding: 15px 0px;/* top 15 right 0 botoom 15 left 0 */
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 999999999;
+
+}
+
+.logo{
+    
+    float: left;
+    width: 20%;
+    height: 30px;
+    padding: 0px 15px;
+    
+    
+}
+.navbar{
+    
+    float: left;
+    width: 80%;
+    text-align: right;
+    height: 30px;
+    
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline;
+}
+.navbar ul li a{ 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0px 12px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 20px;
+   
+}
+
+.home{
+    background-image: url(../img/1.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position:0px -90px;
+    position: relative;
+}
+
+.home .home-contant{
+
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.home .home-contant h1{
+    color: #fff;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-style: italic;
+    line-height: 1.3;
+    font-family: "Droid Serif";
+font-weight :400;
+}
+
+.home .home-contant p{
+
+    color:#fff;
+    font-size: 72px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 800;
+    font-family: "Montserrat";
+   
+
+ 
+ }
+
+ .home .home-contant a,.contactus .comp a{
+
+    color:#fff;
+    background-color:#fed136;
+    display:inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 15px;
+    margin: 60px 0px;
+
+}
+
+.services{
+    padding:100px 0px ;
+}
+
+.services h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 400px;
+}
+.services p{
+    color:rgb(108, 117, 125);
+    text-align: center;
+    font-size: 24px;
+    padding: 15px 0px;
+    font-style: italic;
+    
+}
+
+
+.services .services-items{
+    padding: 50px 0px;
+}
+
+.services .contanier{
+    overflow: hidden;
+}
+
+.services .item{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 0px 12px;
+}
+
+.services-items i{
+    color:#fff ;
+    font-size: 70px;
+    background-color: rgb(254, 209, 54);
+    border-radius: 200px;
+    padding: 20px 20px;
+  
+  
+    
+}
+.services-items h3{
+    margin: 16px 0px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.services-items p{
+    color: rgb(108, 117, 125);
+    font-size: 16px;
+    line-height: 1.7;
+    font-style: normal;
+    font-family: "Roboto Slab";
+}
+
+.portfolio{
+    background-color: rgb(248, 249, 250);
+    text-align: center;
+}
+
+.portfolio h2{
+    text-transform: uppercase;
+    padding:15px 0px;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: bold;
+
+}
+
+.portfolio h3{
+    text-transform: capitalize;
+    padding:10px 0px;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: bold;
+
+}
+
+.portfolio p{
+    padding:5px 0px 45px;
+    font-size: 16px; 
+    color:rgb(108, 117, 125);
+    font-style: italic;
+    font-family: "Droid Serif";
+}
+
+
+.portfolio-items{
+    overflow: hidden;
+  
+}
+
+.portfolio-item img{
+    width: 100%;
+    display: block;
+    background-color:#fff;
+    padding:5px 10px;
+   
+    height: 200px;
+    object-fit: cover;
+    
+       
+}
+
+
+.portfolio-item {
+    float:left;
+    width: 33.33%;
+    position: relative;
+    box-sizing: border-box;
+   
+}
+
+.overlay{
+    position:absolute; /*under image */
+    top:0;
+    left: 0;
+    background-color:rgba(254, 209, 54, 0.9);
+    width: 100%;
+    height: 100%;
+    opacity:0;
+
+}
+
+.portfolio-item:hover .overlay{
+    opacity:1;
+    cursor:pointer;
+}
+
+.overlay-content{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.overlay-content i{ 
+
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ourteam{
+    text-align: center;
+    background-color: #f8f9fa;
+    padding:100px 0px;
+}
+
+.ourteam h2{
+    text-transform: uppercase;
+    padding: 15px 0px;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-weight: 900;
+}
+
+.ourteam p{
+    color:rgb(108, 117, 125);
+    font-size: 20px;
+    font-style: italic;
+    padding:15px 0px;
+    
+}
+
+
+.ourteam-items{
+    overflow: hidden;
+
+
+    
+}
+
+.ourteam-item img{
+    width: 100%;
+    display: block;
+   
+    padding:5px 100px;
+    border-radius: 50% ;
+     
+}
+
+
+.ourteam-item {
+    float:left;
+    width: 33.33%;
+    position: relative;
+    box-sizing: border-box;
+   
+}
+
+
+.ourteam-item h3{
+    text-transform: capitalize;
+    font-size: 24px;
+    padding: 10px 0px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-family: 900;
+}
+
+.ourteam-item p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.ourteam-item i{
+    color:#fff;
+    background-color: rgb(52, 58, 64);
+    border-radius: 50%;
+    padding:10px 10px;
+    margin: 10px 10px;
+}
+
+.pateam p{
+  width: 55%;
+    text-align: center;
+    font-size: 15px;
+    color:rgb(108, 117, 125);
+   
+    margin: 20px auto;
+    line-height: 1.8;
+
+    font-family: "Roboto Slab"; 
+
+font-weight: 400;
+    
+font-style: normal;
+  
+
+}
+
+.imges{
+ 
+    overflow: hidden;
+    text-align: center;
+
+ 
+}
+
+.imges-item{
+    width: 100%;
+    display: block;
+    padding:50px 0px;
+    margin: 0px 10px;
+   
+    
+}
+.imges-item a{
+    margin: 0px 10px;
+}
+
+.contactus{
+    text-align: center;
+    background-color: black;
+    padding: 50px 0px;
+    background-image:url("../img/map-image.png");
+}
+
+.contactus h2{
+    color: white;
+  
+    padding: 0px;
+    text-transform: uppercase;
+    font-family: Montserrat; 
+font-size :40px;
+font-weight :700;
+font-weight: bold;
+}
+
+.contactus p{
+    color: rgb(108, 117, 125);
+   
+    padding: 20px 0px;
+
+    font-style: italic;
+
+    font-size: 16px;
+    font-family: "Droid Serif";
+    
+}
+
+.contactus-items{
+    overflow: hidden;
+}
+
+.contactus .form{
+
+    padding: 15px 15px ;
+    text-align: left;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.contactus .form-one input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;  
+}
+
+.form-one{
+    width: 50%;
+    float: left;   
+    padding:0px 30px;
+}
+
+.contactus .form-two{
+
+    width: 50%;
+    float: left;
+}
+
+.contactus .form-two textarea{
+ 
+  width: 100%;
+    height: 200px;
+    border-radius: 10px;
+ 
+  
+
+   
+}
+
+.contactus .comp a{
+    margin: 20px 0px;
+    
+}
+
+.footer{
+    text-align: center;
+    padding:10px 0px;
+}
+
+.footer-items{
+    overflow: hidden;
+
+}
+
+.footer-item{
+    float:left;
+    width: 33.33%;
+    position: relative;
+  
+}
+
+.footer-item p{
+    color:rgb(33, 37, 41);
+    padding: 20px 0px;
+    font-family :Montserrat;
+font-size: 14.4px;
+font-weight :400;
+}
+
+.footer-item .icons i{
+    color:#fff;
+    background-color: rgb(52, 58, 64);
+    border-radius: 50%;
+    padding:10px 10px;
+    margin: 10px 10px;
+}
+
+.footer-item .links{
+    padding: 20px 0px;
+}
+.footer-item .links a{
+   
+    text-decoration: none;
+    color:rgb(254, 209, 54);
+    margin: 0px 5px;
+    font-family :Montserrat;
+font-size: 14.4px;
+font-weight :400;
+
+}
+
+.about{
+    text-align: center;
+    padding: 100px 0px;
+    
+    
+}
+
+.about h2{
+    text-transform: uppercase;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-family :Montserrat; 
+font-size: 40px;
+font-weight: 900;
+font-weight: bold;
+}
+
+.about p{
+    padding:20px 0px;
+    color:rgb(108, 117, 125);
+    font-size: 18px;
+
+
+}
+
+
+.time-line{
+    position: relative;
+    text-align: center;
+    
+}
+.time-line::before{
+    content: '';
+    position: absolute;
+    left:50%;
+    width: 2px;
+    height: 100%;
+    background-color:#c5c5c5 ;
+}
+.time-line ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+ .time-line ul li{
+    position: relative;
+    width: 50%;
+    padding: 0px 40px;
+}
+/* left part of time line */
+.left{
+float: left;
+text-align: right;
+}
+/* right part of time line */
+.right{
+    float: right;
+    text-align: left;
+    }
+.content{
+  padding-bottom: 150px;
+}
+ .content img{
+width: 35%;
+border-radius: 50%;
+border:10px solid #f8f9fa;
+position: absolute;
+top:0px;
+
+}
+.left .content img{
+    right: -95px;
+}
+.right .content img{
+ 
+    left: -95px;
+}
+.left .time-line-body{
+    margin-right: 80px;
+      }
+   .right .time-line-body{
+     margin-left: 80px; 
+  }
+  .content h4{
+
+ font-size: 24px;
+ margin-bottom: 8px;
+ text-transform: capitalize;
+ 
+ }
+ 
+  .content p{
+     width: 100%;
+     margin-top: 5px;
+
+     font-size: 16px;
+     line-height: 1.5;
+     font-family: Roboto_Slab; 
+     font-weight: normal;
+ }
+ .left .content p{
+     padding-left: 60px;  
+ }
+ .right .content p{
+     padding-right: 60px;
+ }
+ .content .timeline-img{
+  background-color: #fed136; 
+  width: 35%;
+ border-radius: 50%;
+ border:7px solid rgb(233, 236, 239);
+ position: absolute;
+ bottom: 0;
+ right: -95px;
+ 
+ 
+ }
+ .content .timeline-img h4{
+     color: #fff;
+     line-height: 1.2;
+     text-transform: capitalize;
+     }
+     .left .time-line-body{
+    margin-right: 80px;
+      }
+   .right .time-line-body{
+     margin-left: 80px; 
+  }
+  .content h4{
+
+ font-size: 24px;
+ margin-bottom: 8px;
+ text-transform: capitalize;
+ font-family: my-Font;
+ }
+ 
+  .content p{
+     width: 100%;
+     margin-top: 5px;
+  
+     font-size: 16px;
+     line-height: 1.5;
+     font-family: Roboto_Slab; 
+     font-weight: normal;
+   
+ }
+ .left .content p{
+     padding-left: 60px;  
+     
+ }
+ .right .content p{
+     padding-right: 60px;
+ }
+ .content .timeline-img{
+  background-color: #fed136; 
+  width: 35%;
+ border-radius: 50%;
+ border:7px solid rgb(233, 236, 239);
+ position: absolute;
+ bottom: 0;
+ right: -95px;
+ 
+ 
+ }
+ .content .timeline-img h4{
+     color: #fff;
+     line-height: 1.2;
+     text-transform: capitalize;
+
+     text-align: center;
+    font-size: 18px;
+    font-family: my-Font;
+    padding: 30px 0px;
+}
+
+
+
+
+
+
+
+
+
+
